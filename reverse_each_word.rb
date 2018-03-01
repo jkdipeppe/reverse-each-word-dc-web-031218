@@ -3,9 +3,9 @@ def reverse_each_word(string)
   array_final = Array.new
   array = string.split
 
-  array.each |word|
+  array.each do |word|
     temp_word = String.new
-    word.each |letter|
+    word.each do |letter|
       temp_word.insert(0, letter)
     end
     array_final << temp_word
