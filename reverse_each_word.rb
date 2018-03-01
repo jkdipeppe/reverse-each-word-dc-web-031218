@@ -10,7 +10,9 @@ def reverse_each_word(string)
     word_array.each do |letter|
       temp_word.insert(0, letter)
     end
-    array_final << temp_word
+
+    array_final.push(temp_word)
   end
-  array_final
+  final_string = String.new
+  final_string = array_final.join(" ")
 end
