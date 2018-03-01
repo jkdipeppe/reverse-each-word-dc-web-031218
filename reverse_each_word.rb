@@ -5,6 +5,7 @@ def reverse_each_word(string)
 
   array.each do |word|
     word_array = Array.new
+    word_array = word.split
     temp_word = String.new
     word_array.each do |letter|
       temp_word.insert(0, letter)
